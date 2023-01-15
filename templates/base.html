@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>파이보</title>
+</head>
+<body>
+
+<!--navigation bar-->
+{% include "navbar.html" %}
+
+<!-- start: content for implant to base template-->
+{% block content %}
+{% endblock %}
+<!-- end: content for implant to base template-->
+
+
+<!--jQuery JS-->
+<script src="{% static 'jquery-3.6.3.min.js' %}"></script>
+<!--Bootstrap JS-->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+<!--javascript Start-->
+{% block script %}
+{% endblock %}
+<!--javascript End-->
+
+</body>
+</html>
